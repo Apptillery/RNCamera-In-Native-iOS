@@ -1,0 +1,18 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'CoolRNCamera' do
+
+  use_frameworks!
+
+ 	pod 'react-native-camera', path: '../js/node_modules/react-native-camera'
+	pod "Yoga", :path => '../js/node_modules/react-native/ReactCommon/yoga'
+	pod 'React', :path => '../js/node_modules/react-native', :subspecs => [
+  	'Core',
+	'RCTImage',
+	'RCTNetwork',
+	'RCTText',
+	'RCTWebSocket',
+	]
+
+end
